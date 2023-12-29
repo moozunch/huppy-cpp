@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// for loop
+// for looping
 
 int main () {
     system ("cls");
