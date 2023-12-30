@@ -1,6 +1,6 @@
-# C++ Journey with me
+# Journey of learning C++
 
-here i will share my journey of learning c++
+share my journey of learning c++
 from the learning folder, project and even leetcode grinding!
 go check out my branches!
 
