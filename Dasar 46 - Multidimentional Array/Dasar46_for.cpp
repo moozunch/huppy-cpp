@@ -5,7 +5,7 @@ int main() {
     system ("cls");
 
     // Array Multidimensional
-    // int array[baris][kolom]={1,2,3};
+    // int array[baris][kolom]={content};
     int arrnilai[2][2] = {10,20,30,40}; //inngat kan dia baris 2 kolom 2 = 2 * 2 = 4
     // cout << arrnilai [0][0] << " " << arrnilai [0][1] << endl; bentuknya gini, makanya dibuat jadi nested for: 
     for (int i = 0; i < 2; i++) {
