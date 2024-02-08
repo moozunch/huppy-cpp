@@ -1,8 +1,6 @@
 #include <stdio.h>
 // Library, kalau di C++ Include Iostream for STD Library
 
-
-// Main function just the same like C++, the start of the first program
 // Main is a function name that are integrated with C and C++ to marking the start of every program
 int main() {
    // printf() displays the string inside quotation
