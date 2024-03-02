@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-//dynamic array(array kan static/tidak bisa diubah panjangnya), we don't need to know what's size to make vectors unlike array
+//Vector: dynamic array(array kan static/tidak bisa diubah panjangnya), we don't need to know what's size to make vectors unlike array
 
 int main() {
     // vector <data type> name={data inside}
