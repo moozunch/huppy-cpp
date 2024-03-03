@@ -27,8 +27,5 @@ int main() {
     cout << "alamat c: " << &c << endl;
     // (&) work on variables, untuk cout/nampilin nggak perlu pakai (&), cukup nama variable nya aja, jika pakai (&) untuk cout hanya alamat nya disimpan yang akan tampil. The rules is you need to have initiazles or declare.
 
-
-
-
     return 0;
 }
