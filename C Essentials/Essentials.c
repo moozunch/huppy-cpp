@@ -37,7 +37,7 @@ int main() {
     printf ("%d", a + b + c);
     int number = 15;
     char myLetter = 'D';
-    printf("My number is %d and my letter is %c", numberkcccccccccc, myLetter); //jadi dia pengganti nama variabel karena nama variable nya diakhir kan, dan make sures nama variables nya pun berurut sesuai urutan deklarasi spesifier.
+    printf("My number is %d and my letter is %c", number, myLetter); //jadi dia pengganti nama variabel karena nama variable nya diakhir kan, dan make sures nama variables nya pun berurut sesuai urutan deklarasi spesifier.
 
     // A floating point number can also be a scientific number with an "e" to indicate the power of 10:
     float f1 = 35e3;
