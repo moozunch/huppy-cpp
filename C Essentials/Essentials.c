@@ -246,9 +246,6 @@ int main() {
 
 // 13. String
 
-
-
-
     // return 0 artinya nggak ada yang dikembalikan, karena most of the time subprogram perlu ada value yang dikembalikan
     return 0;
 }
