@@ -1,5 +1,6 @@
 #include <stdio.h> //untuk input output
 #include <stdlib.h> //untuk sytem cls
+#include <string.h> // to use string
 //variables: to store data
 //macam cpp, semuanya excuted berdasar urutan penulisan, don't forget semicolon every end of the statement
 
@@ -195,7 +196,7 @@ int main() {
     //ingat indeks dimulai dari 0
     for (i = 0; i < 4; i++) {
         printf ("Access array index ke-%d = %d \n", i, nomorpeserta[i]);
-    } printf ("Selesai!");
+    } printf ("Selesai! \n");
 
     // bisa juga cuma deklare array dan diisi later on
     int Number[4];
@@ -222,7 +223,7 @@ int main() {
 
     // Mencari total umur
     for (i = 0; i < length; i++) {
-    sum += ages[i];
+    sum += ages[i]; // sum = sum + ages[i]
     }
 
     // Calculate the average by dividing the sum by the length
@@ -241,10 +242,38 @@ int main() {
         lowestAge = ages[i]; //di check dulu apakah di lowest ages ada yang lebih kecil dari dia? kalau ada maka akan digantilah kedudukan si lowest ages
   }
 }
-    printf("Umur termuda adalah %d", lowestAge);
+    printf("Umur termuda adalah %d \n", lowestAge);
+
+    //12.2 Multidimensional arrays
+    //12.2.1 Two Dimensional arrays, ada matrix didalam  matrix
+    int matrix[2][3] = {{1,4,2}, {3,6,8}};
+    int lengthj = sizeof(matrix[0]) / sizeof(matrix[0][0]); //untuk ambil size nya, bisa aja sih 3 tulis 3 tapi biar lebih paham aja untuk permaikan jangka panjang
+    for (i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Matriks [%d][%d] = %d \n", i, j, matrix[i][j]);
+        }
+    }
 
 
-// 13. String
+// 13. String - array char kan, jadi pakai []
+    char greetings[] = "Hello World\n"; //harus pkai double quote even tho char supposed to be pakai single quote
+    printf ("%s \n", greetings);
+    printf ("%c \n", greetings[6]); // untuk ambil single character
+    greetings[11] = '!'; //nambah elemen ke-11
+    printf ("%s \n", greetings);
+    //also work with loop
+    char nama[] = "annisa";
+    for (i = 0; i < 6; i++) {
+        printf("%c ", nama[i]);
+    } printf("\n");
+    //another way
+    char greetings1[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+    printf("%s \n", greetings1); // '\0' = end of array
+
+    // 13.1 String length (strlen), kan kalo array bisa di check size nya, kalau string dengan library <string.h> bakal ada fungsi tersendiri untuk itu, dan ingat sizeof return in bytes.
+
+    char alphabet[] = "ABCDEFGHIJKLMN0PQRASTUVWXYZ";
+    printf("%d \n", strlen(alphabet));
 
     // return 0 artinya nggak ada yang dikembalikan, karena most of the time subprogram perlu ada value yang dikembalikan
     return 0;
